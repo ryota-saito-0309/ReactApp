@@ -9,7 +9,7 @@
 
 ### JSXを用いた場合
 
-```
+```javascript
 import React, { Component } from 'react';
 
  JSXを用いた場合
@@ -23,7 +23,7 @@ export default App;
 
 ### JavaScriptを用いた場合
 
-```
+```javascript
 class App extends Component {
   render() {
     return React.createElement(

@@ -13,7 +13,7 @@ ReactのComponentは2種類有ります。
 
 関数コンポーネントは、関数を定義して、ただ、jsxをリターンしているという物
 
-```
+```javascript
 const App = () =>{
   return <div>Hi!</div>
 }
@@ -23,7 +23,7 @@ const App = () =>{
 
 クラスコンポーネントを利用する際は、`import { Component } from 'react';`が必要である。
 
-```
+```javascript
 class App extends Component {
   render() {
     return (
