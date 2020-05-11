@@ -60,3 +60,18 @@ export default combineReducers({foo, zoo, gaz})
 状態の定義はオブジェクトに行います。
 
 初期状態は`initialState`にします。
+
+# store
+
+storeがアプリの全てのコンポーネントで利用できるようにしていきます。
+
+```javascript
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
+```
+Providerで包む事で、全てのコンポーネントで利用できるようになります。
+
