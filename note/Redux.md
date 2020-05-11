@@ -113,4 +113,4 @@ connect(mapStateToProps, mapDispatchToProps)(App)
 ## mapDispatchToPropsの別案
 
 下記のように記載する事も可能である。
-`const mapDispatchToProps = dispatch =>({ increment, decrement })`
+`const mapDispatchToProps = ({ increment, decrement })`
