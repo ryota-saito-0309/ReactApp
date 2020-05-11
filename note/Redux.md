@@ -36,3 +36,27 @@ export const decrement = () => ({
 ```
 
 ここのincrementと言うものはアクションクリエータの関数である。
+
+# Reducerについて
+
+AntionCreaterのタイプに応じて状態をどのように変化させるのかを定義する物です。
+
+状態は、コードの中ではstateという値で扱っていきます。
+アプリケーションの事実上の状態を記述するファイル（counter)を作成します。
+
+## 複数の状態を管理したい場合は
+
+```javascript
+import { combineReducers } from 'redux'
+import foo, zoo, gaz from './state'
+
+export default combineReducers({foo, zoo, gaz})
+```
+上記のように、複数のReducerを引数に指定する事で複数管理ができる。
+
+
+## 状態の定義について
+
+状態の定義はオブジェクトに行います。
+
+初期状態は`initialState`にします。
